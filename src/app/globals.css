@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-[1440px];
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: #090B1A;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #090B1A;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #64ffda;
+  border-radius: 5px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #090B1A;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(135deg, #2BBAF7, #0047CA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.path {
+  transform-style: preserve-3d;
+}
+
+.mask {
+  mask-image: url("../../public/assets/images/tools/mask.png");
+}
+
+.perspective {
+  perspective: 800px;
+}
+
+.cube_anim {
+  transform: rotateZ(calc(var(--i, 0) * 5deg)) rotateY(70deg);
+  animation: cube 14400ms linear infinite;
+  animation-delay: calc(200ms * var(--i));
+  animation-timing-function: linear;
+}
+
+@keyframes cube {
+
+  0%,
+  100% {
+    background-image: linear-gradient(180deg,
+        #eb4899 0%,
+        #d53bab 15.62%,
+        rgba(197, 49, 184, 0.15) 53.12%,
+        #9d19da 83.33%,
+        #7400fc 100%);
+  }
+
+  50% {
+    background-image: linear-gradient(180deg,
+        #7400fc 100% #9d19da 83.33%,
+        rgba(197, 49, 184, 0.15) 53.12%,
+        #d53bab 15.62%,
+        #eb4899 0%);
+  }
+
+  from {
+    transform: rotateZ(calc(var(--i, 0) * 5deg)) rotateY(70deg);
+  }
+
+  to {
+    transform: rotateZ(calc(var(--i, 0) * 5deg - 360deg)) rotateY(70deg);
+  }
+
+  0%,
+  10%,
+  50%,
+  60%,
+  100% {
+    opacity: 0;
+  }
+
+  15%,
+  45%,
+  65%,
+  95% {
+    opacity: 1;
+  }
+}
