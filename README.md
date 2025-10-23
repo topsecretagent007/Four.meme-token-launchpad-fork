@@ -2,6 +2,8 @@
 
 A decentralized token launchpad platform built on Binance Smart Chain (BSC) that allows users to create, launch, and trade BEP-20 tokens with bonding curve pricing.
 
+<img width="1914" height="916" alt="Screenshot_1" src="https://github.com/user-attachments/assets/df0bb573-ac3c-45ad-9d97-a4e69b4b42ec" />
+
 ## ✨ Features
 
 - 🪙 **Token Creation**: Launch your own BEP-20 tokens on BSC with custom metadata
@@ -10,10 +12,6 @@ A decentralized token launchpad platform built on Binance Smart Chain (BSC) that
 - 📊 **Real-time Trading**: Live trading interface with price charts
 - 👤 **User Profiles**: Track created tokens and trading history
 - 🌐 **Social Integration**: Add Twitter, Telegram, and website links to your tokens
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Next.js 14, React, TypeScript, TailwindCSS
 - **Blockchain**: Binance Smart Chain (BSC)
 - **Web3**: Wagmi, Viem, Ethers.js, ConnectKit
 - **Trading Charts**: TradingView Charting Library
