@@ -13,7 +13,6 @@ import { VscDebugDisconnect } from "react-icons/vsc";
 import { FaWallet } from "react-icons/fa";
 import { TbMoodEdit } from "react-icons/tb";
 import UserAvatar from "@/../public/assets/images/user-avatar.png";
-import jwt, { JwtPayload } from 'jsonwebtoken';
 
 
 export const ConnectButton: FC = () => {

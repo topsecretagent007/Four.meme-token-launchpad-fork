@@ -7,8 +7,6 @@ import { ToastContainer } from "react-toastify";
 import { ModalProvider } from "@/contexts/ModalProvider";
 import UserContext from "@/context/UserContext";
 import { msgInfo, userInfo } from "@/utils/types";
-import "dotenv/config.js";
-import LoginContext from "@/context/CoinContex";
 import SocketProvider from "@/contexts/SocketContext";
 
 export const queryClient = new QueryClient();

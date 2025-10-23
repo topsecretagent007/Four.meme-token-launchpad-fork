@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "@/provider/providers";
-import "dotenv/config.js";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
