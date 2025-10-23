@@ -8,6 +8,7 @@ import NotImage from "@/../public/assets/images/no-image.png"
 import Countup from "../others/Countup";
 import { findHolders, getCoinTrade, getTokenPriceAndChange } from "@/utils/util";
 import { KingIcon, RaydiumIcon } from "../others/Icons";
+import PancakeSwapIcon from "@/../public/assets/images/pancakeswap.svg"
 
 const limiteBnbAmount: string | undefined = process.env.NEXT_PUBLIC_LIMITE_BNBAMOUNT;
 
@@ -100,8 +101,8 @@ export const CoinBlog: React.FC<CoinBlogProps> = ({ coin }) => {
               King
             </div>
             <div className='flex flex-row items-center gap-1 bg-main_color/20 backdrop-blur-xl px-2 py-1 border-[1px] border-main_color rounded-full text-[12px] text-main_color 2xs:text-sm'>
-              <RaydiumIcon />
-              Raydium
+              <Image src={PancakeSwapIcon} alt="PancakeSwap" width={20} height={20} />
+              PancakeSwap
             </div>
           </div>
         </div>
