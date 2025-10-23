@@ -8,7 +8,7 @@ import NotImage from "@/../public/assets/images/no-image.png"
 import Countup from "../others/Countup";
 import { findHolders, getCoinTrade, getTokenPriceAndChange } from "@/utils/util";
 import { KingIcon, RaydiumIcon } from "../others/Icons";
-import PancakeSwapIcon from "@/../public/assets/images/pancakeswap.svg"
+import PancakeSwapIcon from "@/../public/assets/images/images.png"
 
 const limiteBnbAmount: string | undefined = process.env.NEXT_PUBLIC_LIMITE_BNBAMOUNT;
 
